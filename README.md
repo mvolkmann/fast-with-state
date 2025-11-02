@@ -13,3 +13,5 @@ To run this:
 1. Click the "Reset" button and note that
    the new value reverts to "World"
    in both the "Hello" message and the `input`.
+
+![Screenshot](./fast-with-state.png)
