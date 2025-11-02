@@ -1,0 +1,16 @@
+{
+  "name": "fast-with-context",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.1.12"
+  },
+  "dependencies": {
+    "@microsoft/fast-element": "^2.8.1",
+    "@microsoft/fast-foundation": "^2.50.0"
+  }
+}
