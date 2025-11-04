@@ -2,13 +2,13 @@ import { attr, css, FASTElement, html } from "@microsoft/fast-element";
 import { myState } from "./my-state.js";
 
 const template = html`
-  <label for="{inputId}">${(e) => e.label}</label>
+  <label for="{inputId}">${(x) => x.label}</label>
   <input
-    id=${(e) => e.inputId}
-    name=${(e) => e.name}
+    id=${(x) => x.inputId}
+    name=${(x) => x.name}
     type="text"
-    :value=${(e) => e.getName()}
-    @change=${(e, c) => e.handleChange(c.event)}
+    :value=${(x) => x.getName()}
+    @change=${(x, c) => x.handleChange(c.event)}
   />
 `;
 

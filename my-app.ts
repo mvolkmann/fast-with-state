@@ -6,7 +6,7 @@ import { myState } from "./my-state.js";
 const template = html`
   <hello-world></hello-world>
   <labeled-input input-id="name" label="Name" name="name"></labeled-input>
-  <button @click=${(e) => e.reset()}>Reset</button>
+  <button @click=${(x) => x.reset()}>Reset</button>
 `;
 
 export class MyApp extends FASTElement {

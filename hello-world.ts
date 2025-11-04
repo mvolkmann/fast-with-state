@@ -1,7 +1,7 @@
 import { css, FASTElement, html } from "@microsoft/fast-element";
 import { myState } from "./my-state.js";
 
-const template = html`<p>Hello, ${(e) => e.getName()}!</p>`;
+const template = html`<p>Hello, ${(x) => x.getName()}!</p>`;
 
 export class HelloWorld extends FASTElement {
   getName() {
