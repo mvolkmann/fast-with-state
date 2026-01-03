@@ -4,13 +4,14 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "reinstall": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "devDependencies": {
-    "vite": "^7.1.12"
+    "vite": "^7.3.0"
   },
   "dependencies": {
-    "@microsoft/fast-element": "^2.8.1",
+    "@microsoft/fast-element": "^2.9.1",
     "@microsoft/fast-foundation": "^2.50.0"
   }
 }
