@@ -2,7 +2,7 @@ import { attr, css, FASTElement, html } from "@microsoft/fast-element";
 import { myState } from "./my-state.js";
 
 const template = html`
-  <label for="{inputId}">${(x) => x.label}</label>
+  <label for=${(x) => x.inputId}>${(x) => x.label}</label>
   <input
     id=${(x) => x.inputId}
     name=${(x) => x.name}
@@ -13,7 +13,7 @@ const template = html`
 `;
 
 export class LabeledInput extends FASTElement {
-  @attr inputId: string;
+  @attr({ attribute: "input-id" }) inputId: string;
   @attr label: string;
   @attr name: string;
 
